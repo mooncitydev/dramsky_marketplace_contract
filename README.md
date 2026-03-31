@@ -1,12 +1,20 @@
 # Mugs-Marketplace-Contract
 Solana NFT Marketplace program with NFT Trading & Auction
 
+## Quick start (Windows / PowerShell)
+
+- Install `solana`, `anchor`, `node`, `yarn`
+- Install deps: `yarn`
+- Run CLI commands:
+  - `yarn cli --help`
+  - Example: `yarn cli status -e devnet`
+
 ## Program Deployment
 
 - Prepare anchor development environments
-- Prepare aroun 12 SOL in the deploy wallet keypair
+- Prepare around 12 SOL in the deploy wallet keypair
 - Confirm Network cluster in `Anchor.toml` file : f.e. `[programs.devnet]`, `cluster = "devnet"`
-- Confirm deploy authority wallet keypair location : f.e. `wallet = "/home/ubuntu/deploy-keypair.json"
+- Confirm deploy authority wallet keypair location : f.e. `wallet = "/home/ubuntu/deploy-keypair.json"`
 - Configure solana cli with deploy authority keypair and deploying cluster : f.e. `solana config set -h`
 - Build program with `anchor build`
 - Copy and paste the result deploy scripts from Build terminal message : f.e. `solana program deploy /home/ubuntu/project/target/deploy/mugs_marketplace.so`
@@ -30,7 +38,7 @@ You can run this command `export BROWSER=` once.
 ### Install Dependencies
 
 - Install `node` and `yarn`
-- Install `ts-node` as global command
+- Install deps with `yarn` (includes `ts-node`)
 - Confirm the solana wallet preparation in `package.json`: `/root/.config/solana/creator.json` in test case
 
 ### Init Program
